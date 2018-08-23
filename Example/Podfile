@@ -1,0 +1,7 @@
+use_frameworks!
+target 'GJRepy_Tests' do
+  pod 'GJRepy', :path => '../'
+  
+  pod 'Specta'
+    pod 'Expecta'
+end

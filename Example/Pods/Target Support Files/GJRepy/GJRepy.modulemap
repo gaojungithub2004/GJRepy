@@ -1,0 +1,6 @@
+framework module GJRepy {
+  umbrella header "GJRepy-umbrella.h"
+
+  export *
+  module * { export * }
+}
