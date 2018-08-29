@@ -30,13 +30,29 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'GJRepy/Classes/**/*'
+  # s.source_files = 'GJRepy/Classes/**/*'
   
   # s.resource_bundles = {
   #   'GJRepy' => ['GJRepy/Assets/*.png']
   # }
 
-  s.public_header_files = 'GJRepy/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  # s.public_header_files = 'GJRepy/Classes/**/*.h'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit'
+
+  s.subspec 'category' do |ss|
+    ss.source_files  = "Classes/category/*.{c,h,m,mm,S}"
+    ss.public_header_files = "Classes/category/*.h"
+    ss.requires_arc  = true
+  end
+  s.subspec 'fun' do |ss|
+    ss.source_files  = "Classes/fun/*.{c,h,m,mm,S}"
+    ss.public_header_files = "Classes/fun/*.h"
+    ss.requires_arc  = true
+  end
+  s.subspec 'marco' do |ss|
+    ss.source_files  = "Classes/marco/*.{c,h,m,mm,S}"
+    ss.public_header_files = "Classes/marco/*.h"
+    ss.requires_arc  = true
+  end
 end
