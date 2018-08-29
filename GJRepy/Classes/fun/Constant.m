@@ -12,10 +12,3 @@
 inline UIColor *RGBA(CGFloat r, CGFloat g, CGFloat b, CGFloat a){
     return [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a];
 }
-
-inline CGFloat Height(UIView *view){
-    return view.bounds.size.height;
-}
-inline CGFloat Width(UIView *view){
-    return view.bounds.size.width;
-}
